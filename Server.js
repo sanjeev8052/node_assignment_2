@@ -38,7 +38,7 @@ app.use('/uploads', express.static('uploads'))
 app.use(methodOverride('_method')); // For handling PUT and DELETE requests
 
 app.set('view engine', 'ejs')
-app.use(express.static("Html"))
+app.use(express.static("public"))
 app.set('views', path.join(__dirname, 'views'))
 
 app.use('/product', productRoutes);
